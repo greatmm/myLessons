@@ -12,5 +12,6 @@ enum VendingMachineError: Error {
     case insufficientFunds(coinsNeeded: Int) //金额不足
     case outOfStock                             //缺货
 }
+
 throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
 
